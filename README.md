@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting Started with Feem
 
 Feem is a movie streaming platform that helps users to watch movies online and can download their favorite. Its seamlessness ensures users are not troubled in navigating through the app. 
 Apart from sreamling the moveies online, movies can be liked and adjustment could be made to the liked movies by deleting them. 
