@@ -84,3 +84,87 @@ export const Movies = [
     video: "https://example.com/videos/dark_knight.mp4",
   },
 ];
+
+
+export const UserData = [
+  {
+    id: 1,
+    fullName: "Ryan Reynolds",
+    image: "",
+    email: "renolds@gmail.com",
+    rate: 0.5,
+    message: "uytrh hdhgcv iytr nhdhterds hdvvcg fhycfvdttvs hydtrefd bggdt"
+  },
+  {
+    id: 2,
+    fullName: "Charlize Therone",
+    image: "",
+    email: "theron@gmail.com",
+    rate: 3,
+    message: "uytrh hdhgcv iytr nhdhterds hdvvcg fhycfvdttvs hydtrefd bggdt"
+  },
+  {
+    id: 3,
+    fullName: "Samuel L. Jackson",
+    image: "",
+    email: "jackson@gmail.com",
+    rate: 5,
+    message: "uytrh hdhgcv iytr nhdhterds hdvvcg fhycfvdttvs hydtrefd bggdt"
+  },
+  {
+    id: 4,
+    fullName: "Jackie Chan",
+    image: "",
+    email: "chan@gmail.com",
+    rate: 4.5,
+    message: "uytrh hdhgcv iytr nhdhterds hdvvcg fhycfvdttvs hydtrefd bggdt"
+  },
+  {
+    id: 5,
+    fullName: "Angela Basset",
+    image: "",
+    email: "basset@gmail.com",
+    rate: 3.5,
+    message: "uytrh hdhgcv iytr nhdhterds hdvvcg fhycfvdttvs hydtrefd bggdt"
+  },
+  {
+    id: 6,
+    fullName: "Chris Hemsworth",
+    image: "",
+    email: "chris@gmail.com",
+    rate: 4,
+    message: "uytrh hdhgcv iytr nhdhterds hdvvcg fhycfvdttvs hydtrefd bggdt"
+  },
+  {
+    id: 7,
+    fullName: "Chris Evans",
+    image: "",
+    email: "evans@gmail.com",
+    rate: 4.5,
+    message: "uytrh hdhgcv iytr nhdhterds hdvvcg fhycfvdttvs hydtrefd bggdt"
+  },
+  {
+    id: 8,
+    fullName: "Liam Hemsworth",
+    image: "",
+    email: "liam@gmail.com",
+    rate: 3.5,
+    message: "uytrh hdhgcv iytr nhdhterds hdvvcg fhycfvdttvs hydtrefd bggdt"
+  },
+  {
+    id: 9,
+    fullName: "Eddie Murphy",
+    image: "",
+    email: "eddie@gmail.com",
+    rate: 3.5,
+    message: "uytrh hdhgcv iytr nhdhterds hdvvcg fhycfvdttvs hydtrefd bggdt"
+  },
+  {
+    id: 10,
+    fullName: "Toby Maguire",
+    image: "",
+    email: "toby@gmail.com",
+    rate: 2.5,
+    message: "uytrh hdhgcv iytr nhdhterds hdvvcg fhycfvdttvs hydtrefd bggdt"
+  },
+];
