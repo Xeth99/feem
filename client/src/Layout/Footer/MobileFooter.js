@@ -8,7 +8,7 @@ import MenuDrawer from "../../Components/Drawer/MenuDrawer";
 import { SidebarContext } from "../../Context/DrawerContext";
 
 function MobileFooter() {
-  const { mobileDrawer, toggleDrawer } = useContext(SidebarContext);
+  const { mobileDrawer, toggleDrawer } = useContext(SidebarContext) || {};
   const active = "bg-white text-main";
   const inActive =
     "transitions text-2xl flex-colo hover:bg-white hover:text-main text-white rounded-md px-4 py-3";

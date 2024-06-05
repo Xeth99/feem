@@ -4,7 +4,7 @@ export const Message = ({ label }) => {
       <label className="text-border font-sembold">{label}</label>
       <textarea
         className="w-full h-40 mt-2 p-6 bg-main border border-border rounded"
-        placeholder="Make it short..."
+        placeholder="Message..."
       ></textarea>
     </div>
   );
@@ -42,7 +42,6 @@ export const Input = ({
     <div className="text-sm w-full">
       <label className="text-border font-semibold">{label}</label>
       <input
-        required
         name={name}
         value={value}
         onChange={onChange}

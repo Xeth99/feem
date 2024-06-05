@@ -90,7 +90,7 @@ export const UserData = [
   {
     id: 1,
     fullName: "Ryan Reynolds",
-    image: "",
+    image: "cast1.jpeg",
     email: "renolds@gmail.com",
     rate: 0.5,
     message: "uytrh hdhgcv iytr nhdhterds hdvvcg fhycfvdttvs hydtrefd bggdt"
@@ -98,7 +98,7 @@ export const UserData = [
   {
     id: 2,
     fullName: "Charlize Therone",
-    image: "",
+    image: "cast2.webp",
     email: "theron@gmail.com",
     rate: 3,
     message: "uytrh hdhgcv iytr nhdhterds hdvvcg fhycfvdttvs hydtrefd bggdt"
@@ -106,7 +106,7 @@ export const UserData = [
   {
     id: 3,
     fullName: "Samuel L. Jackson",
-    image: "",
+    image: "cast3.webp",
     email: "jackson@gmail.com",
     rate: 5,
     message: "uytrh hdhgcv iytr nhdhterds hdvvcg fhycfvdttvs hydtrefd bggdt"
@@ -114,7 +114,7 @@ export const UserData = [
   {
     id: 4,
     fullName: "Jackie Chan",
-    image: "",
+    image: "cast4.jpeg",
     email: "chan@gmail.com",
     rate: 4.5,
     message: "uytrh hdhgcv iytr nhdhterds hdvvcg fhycfvdttvs hydtrefd bggdt"
@@ -122,7 +122,7 @@ export const UserData = [
   {
     id: 5,
     fullName: "Angela Basset",
-    image: "",
+    image: "cast5.jpeg",
     email: "basset@gmail.com",
     rate: 3.5,
     message: "uytrh hdhgcv iytr nhdhterds hdvvcg fhycfvdttvs hydtrefd bggdt"
@@ -130,7 +130,7 @@ export const UserData = [
   {
     id: 6,
     fullName: "Chris Hemsworth",
-    image: "",
+    image: "cast6.jpeg",
     email: "chris@gmail.com",
     rate: 4,
     message: "uytrh hdhgcv iytr nhdhterds hdvvcg fhycfvdttvs hydtrefd bggdt"
@@ -138,7 +138,7 @@ export const UserData = [
   {
     id: 7,
     fullName: "Chris Evans",
-    image: "",
+    image: "cast7.jpeg",
     email: "evans@gmail.com",
     rate: 4.5,
     message: "uytrh hdhgcv iytr nhdhterds hdvvcg fhycfvdttvs hydtrefd bggdt"
@@ -146,7 +146,7 @@ export const UserData = [
   {
     id: 8,
     fullName: "Liam Hemsworth",
-    image: "",
+    image: "cast8.jpeg",
     email: "liam@gmail.com",
     rate: 3.5,
     message: "uytrh hdhgcv iytr nhdhterds hdvvcg fhycfvdttvs hydtrefd bggdt"
@@ -154,7 +154,7 @@ export const UserData = [
   {
     id: 9,
     fullName: "Eddie Murphy",
-    image: "",
+    image: "cast9.webp",
     email: "eddie@gmail.com",
     rate: 3.5,
     message: "uytrh hdhgcv iytr nhdhterds hdvvcg fhycfvdttvs hydtrefd bggdt"
@@ -162,7 +162,7 @@ export const UserData = [
   {
     id: 10,
     fullName: "Toby Maguire",
-    image: "",
+    image: "cast10.jpeg",
     email: "toby@gmail.com",
     rate: 2.5,
     message: "uytrh hdhgcv iytr nhdhterds hdvvcg fhycfvdttvs hydtrefd bggdt"

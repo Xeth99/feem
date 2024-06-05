@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useCallback, useState } from "react";
 import { useDropzone } from "react-dropzone";
 import { FiUploadCloud } from "react-icons/fi";
 
-function Uploader() {
+function Uploader({ setImageUrl }) {
+  const [loading, setLoading] = useState(false);
+
+  // upload file
+  const onDrop = useCallback(async (acceptedFiles) => {
+    const file = new FormData();
+    file.append("file", acceptedFiles[0]);
+    console.log(file);
+  });
+
   const { getRootProps, getInputProps } = useDropzone({
     multiple: false,
     maxSize: 100000,

@@ -17,7 +17,7 @@ import {
 } from "react-share";
 import { MdEmail } from "react-icons/md";
 
-function ShareMovieNodal({ modalOpen, setModalOpen, movie }) {
+function ShareMovieModal({ modalOpen, setModalOpen, movie }) {
   const shareData = [
     {
       icon: FaFacebook,
@@ -70,4 +70,4 @@ function ShareMovieNodal({ modalOpen, setModalOpen, movie }) {
   );
 }
 
-export default ShareMovieNodal;
+export default ShareMovieModal;

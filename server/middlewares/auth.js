@@ -8,6 +8,7 @@ const generateToken = (id) => {
     expiresIn: "1d",
   });
 };
+r;
 
 // protection middleware
 export const protect = asyncHandler(async (req, res, next) => {
@@ -40,10 +41,10 @@ export const protect = asyncHandler(async (req, res, next) => {
 // admin middleware
 export const admin = (re, res, next) => {
   if (req.user && req.user.isAdmin) {
-    next()
+    next();
   } else {
-    res.status(401)
-    throw new Eror("Not authorized as an admin")
+    res.status(401);
+    throw new Eror("Not authorized as an admin");
   }
 };
 

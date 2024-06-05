@@ -11,7 +11,7 @@ import Movie from "../Components/Movie";
 import ShareMovieModal from "../Components/Modals/ShareMovieModal";
 
 function SingleMovie() {
-  const [modalOpen, setModalOpen] = useState(false);
+  const [modalOpen, setModalOpen] = useState(true);
   const { id } = useParams();
   const movie = Movies.find((movie) => movie.name === id);
   const RelatedMovies = Movies.filter((m) => m.category === movie.category);
@@ -23,7 +23,7 @@ function SingleMovie() {
         movie={movie}
       />
       <MovieInfo movie={movie} setModalOpen={setModalOpen} />
-      <div className="container mx:auto min-h-screen px-2 my-6">
+      <div className="container mx-auto min-h-screen px-2 my-6">
         <MovieCasts />
         {/* {rate} */}
         <MovieRates movie={movie} />

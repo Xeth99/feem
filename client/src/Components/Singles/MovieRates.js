@@ -41,11 +41,11 @@ function MovieRates({ movie }) {
         {/* write reviews */}
         <div className="xl:col-span-2 w-full flex flex-col gap-8">
           <h3 className="text-xl text-text font-semibold">
-            Review "{movie?.name}
+            Review "{movie?.name}"
           </h3>
           <p className="text-sm leading-7 font-medium text-border">
-            Write a review for this movie. It will be posted on this page. Lorem
-            ipsum Huyten hjhsytbd uhyte hytsbg jdjyfv judhytr
+            Your review about <span className="font-bold">{movie?.name}</span>{" "}
+            would be appreciated.
           </p>
           <div className="text-sm w-full">
             <Select
@@ -72,7 +72,7 @@ function MovieRates({ movie }) {
               <div className="md:grid flex flex-col w-full grid-cols-12 gap-6 bg-dry p-4 border border-gray-800 rounded-lg">
                 <div className="col-span-2 bg-main hidden md:block">
                   <img
-                    src={`/images/${user ? user.image : "user.jpg"}`}
+                    src={`/images/castsImg/${user ? user.image : "user.jpg"}`}
                     alt={user.fullName}
                     className="w-full h-24 rounded-lg object-cover"
                   />
