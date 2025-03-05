@@ -8,10 +8,10 @@ import asyncHandler from "express-async-handler";
 // @route POST/api/movies/import
 // @access Public
 const importMovies = asyncHandler(async (req, res) => {
-  // first we make sure our Movies table is empty by deleting all document
+  // first we make sure our Movies table is empty by deleting all documents
   await Movie.deleteMany({});
   // then we insert all movies from MovieData
-  const movies = await Movie.insertmany(MoviesData);
+  const movies = await Movie.insertMany(MoviesData);
   res.status(201).json(movies);
 });
 
@@ -58,7 +58,7 @@ const getMovies = asyncHandler(async (req, res) => {
 });
 
 // @desc get all movies
-// @route GET /api/movies
+// @route GET /api/movies/:id
 // @access Public
 const getMovieById = asyncHandler(async (req, res) => {
   try {
@@ -109,12 +109,13 @@ const getRandomMovies = asyncHandler(async (req, res) => {
 // @route POST /api/movies/:id/reviews
 // @access Private
 const createMovieReview = asyncHandler(async (req, res) => {
+  const { rating, comment } = req.body;
   try {
     // find movie by id
-    const movie = await Movie.findId(req.params.id);
+    const movie = await Movie.findById(req.params.id);
 
     if (movie) {
-      // check if the user already reviewd this movie
+      // check if the user already reviewed this movie
       const alreadyReviewed = movie.reviews.find(
         (r) => r.userId.toString() === req.user._id.toString()
       );
@@ -124,8 +125,8 @@ const createMovieReview = asyncHandler(async (req, res) => {
         throw new Error("You already reviewed this movie");
       }
       const review = {
-        username: req.user.fullName,
-        userid: req.user._id,
+        userName: req.user.fullName,
+        userId: req.user._id,
         userImage: req.user.image,
         rating: Number(rating),
         comment,

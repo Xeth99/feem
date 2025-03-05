@@ -9,6 +9,7 @@ const loginAction = (datas) => async (dispatch) => {
     dispatch({ type: userConstants.USER_LOGIN_REQUEST });
     const response = await userApi.loginService(datas);
     dispatch({ type: userConstants.USER_LOGIN_SUCCESS, payload: response });
+    toast.success("Logged in successfully");
   } catch (error) {
     ErrorAction(error, dispatch, userConstants.USER_LOGIN_FAIL);
   }
@@ -21,6 +22,7 @@ const registerAction = (datas) => async (dispatch) => {
     const response = await userApi.loginService(datas);
     dispatch({ type: userConstants.USER_REGISTER_SUCCESS, payload: response });
     dispatch({ type: userConstants.USER_LOGIN_SUCCESS, payload: response });
+    toast.success("Registered successfully");
   } catch (error) {
     ErrorAction(error, dispatch, userConstants.USER_REGISTER_FAIL);
   }

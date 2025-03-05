@@ -4,7 +4,7 @@ import Axios from "./Axios";
 const registerService = async (user) => {
   const { data } = await Axios.post("/users", user);
   if (data) {
-    localStorage.setIcon("userInfo", JSON.stringify(data));
+    localStorage.setItem("userInfo", JSON.stringify(data));
   }
   return data;
 };

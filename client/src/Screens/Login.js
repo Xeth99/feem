@@ -42,7 +42,7 @@ function Login() {
       navigate("/profile");
     }
     if (isSuccess) {
-      toast.success(`Welcome back ${userInfo?.fillName}`);
+      toast.success(`Welcome back ${userInfo?.fullName}`);
     }
     if (isError) {
       toast.error(isError);
@@ -92,7 +92,6 @@ function Login() {
             className="bg-subMain transitions hover:bg-main flex-rows gap-4 text-white p-4 rounded-lg w-full"
           >
             {
-              //if loading shows loading
               isLoading ? (
                 "Loading..."
               ) : (

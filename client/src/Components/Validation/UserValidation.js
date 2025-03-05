@@ -24,7 +24,10 @@ const RegisterValidation = yup.object({
     .string()
     .required("Full name is required")
     .max(20, "Full name must be less than 20 characters")
-    .matches(/^[a-zA-Z]*$/, "Full name must contain only letters"),
+    .matches(
+      /^[A-Za-z]+\s[A-Za-z]+$/,
+      "Full name must include first and last name, letters only"
+    ),
 });
 
 const ProfileValidation = yup.object().shape({
@@ -32,9 +35,11 @@ const ProfileValidation = yup.object().shape({
     .string()
     .required("Full name is required")
     .max(20, "Full name must be less than 20 characters")
-    .matches(/^[a-zA-Z]*$/, "Full name must contain only letters"),
+    .matches(
+      /^[A-Za-z]+\s[A-Za-z]+$/,
+      "Full name must include first and last name, letters only"
+    ),
   email: yup.string().email().required("Email is required").trim(),
-    
-})
+});
 
-export {LoginValidation, RegisterValidation, ProfileValidation}
+export { LoginValidation, RegisterValidation, ProfileValidation };

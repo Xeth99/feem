@@ -29,12 +29,10 @@ function Register() {
     resolver: yupResolver(RegisterValidation),
   });
 
-  // on submit
   const onSubmit = (data) => {
     dispatch(registerAction(data));
   };
 
-  // useEffect
   useEffect(() => {
     if (userInfo?.isAdmin) {
       navigate("/dashboard");

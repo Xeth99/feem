@@ -37,7 +37,6 @@ function Profile() {
     console.log({ ...data, image: imageUrl });
   };
 
-  // useEffect
   useEffect(() => {
     if (userInfo) {
       setValue("fullName", userInfo?.fullName);
